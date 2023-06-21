@@ -11,15 +11,6 @@ async function getTasks(): Promise<AxiosResponse<GetTasks[], any>> {
 export default async function ListOfTasks() {
   const { data } = await getTasks();
 
-  const TABLE_HEAD = [
-    "Title",
-    "Description",
-    "Date of Creation",
-    "Date of Conclusion",
-    "Concluded",
-    "",
-  ];
-
   return (
     <div className="flex justify-center flex-col items-center pb-10">
       <h2 className="text-3xl text-zinc-200 text-extrabold m-5">
