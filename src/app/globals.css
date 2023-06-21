@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 244, 244;
+  --background-start-rgb: 247, 230, 196;
+  --background-end-rgb: 96, 108, 93;
+  --lightblue: #517ff7;
+  --darkblue: #253663;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 244, 244;
+    --background-start-rgb: 247, 230, 196, 1;
+    --background-end-rgb: 96, 108, 93;
+    --background-darker: 241,195,118,1;
+  }
+}
+
+body {
+    color: rgb(var(--foreground-rgb));
+    background: var(--lightblue);
+    min-height: 100vh;
+}
